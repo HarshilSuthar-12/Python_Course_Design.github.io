@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    
+}
+:root{
+    --nav-color: linear-gradient(180deg, lightblue, white);
+    --a-color:#000;
+}
+button{
+    cursor: pointer;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 13vh;
+    background: var(--nav-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px solid rgb(238, 158, 202);
+}
+img{
+    width: 25rem;
+    height: 10rem;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    padding: 3.5rem;
+    font-size: 2rem;
+    color: var(--a-color);
+    font-weight: 600;
+}
+.btn .fa{
+    padding: 0 1rem;
+}
+.btn a{
+    padding: 1rem 3rem;
+    background-color: #eee;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.3);
+    margin: 0 .5rem;
+    color: #222;
+    font-weight: 500;
+}
+.btn a:nth-child(2){
+    background: linear-gradient(90deg, rgb(4, 13, 145),rgb(134, 22, 226) );
+    color: #fff;
+}
+.outer_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/Center\ Background\ img.png);
+    width: 70%;
+    height: 65%;
+    box-shadow: 0 0 15px 0 #ddd;
+    border-radius: 10px;
+    padding: 50px;
+}
+.main_box{
+    display: flex;
+}
+
+.left
+{
+    padding: 0.5rem;
+    width: 150%;
+    height: 100%;
+
+}
+.right img
+{
+    width: 75%;
+    height: 70%;
+    filter: saturate(0.5);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+
+}
+.left h1{
+    font-size: 5rem;
+    color: rgb(29, 37, 29);
+}
+.left h2{
+    padding: 1.2rem rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.left span{
+    font-weight: bold;
+}
+.left p{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 500;
+    color: blue;
+}
+.para{
+    margin: 5rem 0 1rem 0.3rem;
+}
+.fa-bar-chart-o:before, .fa-bar-chart:before {
+    content: "\f080";
+    font-size: 4rem;
+}
+.para .fa{
+    padding: 0 0.1rem;
+    color: goldenrod;
+}
+.btn_box{
+    display: flex;
+}
+.btn_box a{
+    padding: 3rem 5rem;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, rgb(4, 13, 145),rgb(137, 15, 236) );
+    margin: 0 1.5rem 0 0;
+    border-radius: 1.3rem;
+    color: #fff;
+    font-weight: bold;
+}
+.btn_box p {
+    font-size: 2rem;
+    color: #222;
+}
+.box{
+    background: linear-gradient(90deg, rgb(4, 13, 145),rgb(134, 22, 226) );
+    width: 55%;
+    height: 15%;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 15px 0 #999;
+    border-radius: 10px;
+    display: block;
+}
+.box ul.prog_1,ul.prog_2  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.box ul.prog_1 li,ul.prog_2 li{
+    padding: 1.2rem 5rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+.box ul.prog_1 .fa,ul.prog_2 .fa{
+    padding: 1rem;
+    background-color: #fff;
+    color:  rgb(4, 13, 145);
+    border-radius: 5rem;
+}
+
+/* HEADER PART OVER */
+
+section.second{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Curiculam_BG.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+section.second img{
+    position: absolute;
+    top: 75%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 40%;
+}
+section.second h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);
+    padding: 6rem 20rem;
+}
+
+.curiculam_section{
+    width: 100%;
+    height: 9vh ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.curiculam_section .left_section{
+    padding: 0 20rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.curiculam_section button{
+    margin-right: 25rem;
+    background:  linear-gradient(90deg, rgb(4, 13, 145),rgb(134, 22, 226) );
+    padding: 2rem 8rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 9px 0 #999;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #eee;
+    letter-spacing: 0.1rem;
+}
+
+.intro_input {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    margin: 7rem 0;
+}
+.intro_input .intro a{
+    padding: 1rem 2rem;
+    background: none;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    border: 1rem solid linear-gradient(90deg, rgb(4, 13, 145),rgb(134, 22, 226) ) ;
+}
+.intro_input .intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro_input .intro span.plus{
+    width: 1rem;
+    height: 1rem;
+}
+.intro_input .intro span{
+    border-radius: 5rem;
+}
+
+.border {
+    width: 65rem;
+    border: 0.7rem solid transparent;
+    border-image: linear-gradient(to right, rgb(4, 13, 145),rgb(134, 22, 226));
+    border-image-slice: 1;
+    padding: 1rem;
+}
+.intro_input .watch_list a{
+    padding: 0rem 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.watch_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-play-circle:before {
+    content: "\f144";
+    padding: 1rem;
+    background: linear-gradient(to right, rgb(4, 13, 145),rgb(134, 22, 226));
+    color: #fff;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11rem;
+    width: 5rem;
+}
+.fa-bookmark::before {
+    content: "";
+    padding: 1rem;
+    background: linear-gradient(to right, rgb(4, 13, 145),rgb(134, 22, 226));
+    color: #fff;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11rem;
+    width: 5rem;
+}
+.fa-calendar-check-o:before {
+    content: "\f274";
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 3rem;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #333399 51%, #ff00cc 100%);
+}
+
+.fa-plus-circle:before {
+    content: "\f055";
+    width: 5rem;
+    padding: 0.5rem;
+    font-size: 5rem;
+    background: linear-gradient(to right, #333399 51%, #ff00cc 100%);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* CURICULAM SECTION END */
+
+
+.third{
+    position: relative;
+    margin: 10rem 0;
+    width: 100%;
+    height: 80vh;
+    /* background-color: #e8f2f2; */
+    background: url('../img/offers.png');
+    background-repeat: no-repeat;
+}
+.third h1{
+    padding: 5rem 5rem 3rem 5rem;
+    font-size: 4rem;
+}
+.third h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);
+}
+/* .third .offers1 img{
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+} */
+
+.third .offers_text{
+    z-index: 10000;
+    display: flex;
+    justify-content: space-evenly;
+}
+.third .offers_text .left_text, .third .offers_text .right_text{
+    margin: 10rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.third .offers_text .left_text h1, .third .offers_text .right_text h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* font-size: 5rem; */
+    font-weight: bold;
+    background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);
+}
+.third .offers_text .left_text h2, .third .offers_text .right_text h2{
+    margin-bottom: 4rem;
+}
+.third .offers_text .left_text a, .third .offers_text .right_text a{
+    color: #fff;
+    padding: 1rem 5rem;
+    background: linear-gradient(to right, rgb(4, 13, 145),rgb(134, 22, 226));
+    font-size: 3rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 #999;
+}
+
+/* OFFERS SECTION END */
+
+.forth{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/About\ The\ Course.png');
+    background-repeat: no-repeat;
+}
+.forth h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);
+    padding: 4rem 20rem;
+}
+.forth p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0rem 7rem;
+}
+.forth .p1{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.forth_curiculam_section{
+    width: 100%;
+    height: 9vh ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.forth_curiculam_section .left_section{
+    padding: 0 20rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.forth_curiculam_section button{
+    margin-right: 25rem;
+    background:  linear-gradient(90deg, rgb(4, 13, 145),rgb(134, 22, 226) );
+    padding: 2rem 8rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 9px 0 #999;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #eee;
+    letter-spacing: 0.1rem;
+}
+.outer_course_benifits{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+}
+.outer_course_benifits img{
+    position: absolute;
+    top: 35%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 50rem;
+    height: 50rem;
+    box-shadow: 0 0 20px 0 #999;
+    border-radius: 1rem;
+}
+
+.course_benifits{
+    position: absolute;
+    top: 32%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 75vh;
+    background: #aed6d5;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px 0 #999;
+}
+.course_benifits h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);
+    padding: 4rem 5rem;
+}
+.course_benifits ul li{
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 0.6rem 5rem;
+    width: 55%;
+}
+
+/* About the Course Sevtion End */
+
+
+.fiffth{
+    width: 100%;
+    height: 50vh;
+    background: url('../img/Learn.png');
+    background-repeat: no-repeat;
+    margin: 0 0 10rem 0;
+}
+.fiffth h1{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);
+    padding: 4rem 5rem;
+}
+.img_gallary {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img_gallary img{
+    width: 10%;
+    height: auto;
+}
+
+/* Learn Section End */
+
+.sixth {
+    width: 100%;
+    height: 50vh;
+    font-weight: bold;
+    /* background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);     */
+    display: grid;
+    place-items: center;
+}
+.sixth .center{
+    width: 80%;
+    height: 70%;
+    background: #eee;
+    border-radius: 1rem;
+    box-shadow:  0 0 20px 0 #999;
+}
+.sixth .center h1{
+    margin: 2rem 8rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #333399 1%, #ff00cc 100%);
+    padding: 1rem 2rem;
+}
+.sixth .center .ask_input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.sixth .center .ask_input p{
+    font-size: 2.5rem;
+}
+.sixth .center  a{
+    font-size: 2rem;
+    padding: 1rem 10rem;
+}
+.sixth .center .ask_input input{
+    background: transparent;
+    border: 2px solid purple;
+    width: 45%;
+    padding: 2rem;
+    border-radius: 7rem;
+    box-shadow: 0 0 20px 0 #999;
+}
+.sixth .center .ask_input button{
+    background:  linear-gradient(90deg, rgb(4, 13, 145),rgb(134, 22, 226) );
+    padding: 2rem 8rem;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0 0 9px 0 #999;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #eee;
+    letter-spacing: 0.1rem;
+}
+
+/* FAQs Section End */
+
+section.footer{
+    width: 100%;
+    height: 50vh;
+    background: #222;
+    margin: 3rem 0 0 0;
+}
+
+.footer{
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer .heading{
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer h1{
+    font-size: 5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.footer .contant{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 4rem;
+}
+.footer ul li a{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+.footer .right_footer ul  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+.footer .fa:before {
+    font-size: 5rem;
+    padding: 1rem;
+}
